@@ -1,0 +1,22 @@
+<div class="container">
+  <h2>Student Information</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Marks</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of students">
+        <td>{{ student.id }}</td>
+        <td>{{ student.name }}</td>
+        <td>{{ student.marks }}</td>
+        <td><button (click)="selectedStudent = student">Select</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

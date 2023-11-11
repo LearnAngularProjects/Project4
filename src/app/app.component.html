@@ -1,0 +1,7 @@
+<p>{{ title }}</p>
+<input type="text" #myButton (keyup)="0">
+<p>{{ myButton.value }}</p>
+<button (click)="sendDataToComponent(myButton)">Send Data</button>
+<hr>
+<app-student-list #student></app-student-list>
+<p>You selected {{student.selectedStudent?.name}} </p>
